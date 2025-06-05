@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    ;
+    color: #333333;
+}
+
+html,
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.container {
+    border: 2px solid rgb(82, 80, 80);
+    padding: 12px;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    margin: 20px;
+    background-color: #ffffff;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    padding: 5px 28px;
+    font-size: 15px;
+    border-radius: 8px;
+    text-align: center;
+    color: #0e0d0d;
+    margin: 0px;
+}
+
+.addbtn {
+    padding: 7px 15px;
+    border-radius: 20px;
+    margin: 6px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.addbtn:hover {
+    background: linear-gradient(to left, #00e413, #4CAF50);
+    transition: all 0.2s linear;
+}
+
+#taskList {
+    height: 227px;
+    width: 346px;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    overflow-y: auto
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888888;
+    /* Faded gray */
+    opacity: 0.7;
+}
+
+.task {
+    margin: 6px 0;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        height: 378px;
+        width: 377px;
+    }
+
+    .inputData {
+        margin-top: 20px;
+    }
+
+    #taskList {
+        height: 254px;
+        margin-top: 25px;
+    }
+
+}
+
+@media screen and (min-width: 900px){
+    .container {
+        height: 500px;
+        width: 731px;
+        justify-content: start;
+         margin: 12px
+    }
+
+    input {
+        width: 430px;
+    }
+
+    #taskList {
+        height: 384px;
+        width: 611px;
+        margin-top: 25px;
+    }
+}
